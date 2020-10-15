@@ -1,0 +1,13 @@
+{
+    "name": "fadhil_riyanto/php-cli-color",
+    "description": "Simple and easy to use the PHP command-line output of color...",
+    "type": "library",
+    "license": "mit",
+    "authors": [
+        {
+            "name": "fadhil-riyanto",
+            "email": "id.fadhil.riyanto@gmail.com"
+        }
+    ],
+    "require": {}
+}
