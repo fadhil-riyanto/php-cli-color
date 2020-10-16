@@ -202,6 +202,9 @@ switch ($argv[1]){
 		$data = new cli_color;
 			echo $data->green("######################################################################").PHP_EOL;
 			echo $data->cyan("See https://github.com/fadhil-riyanto/php-cli-color readme file...okay").PHP_EOL;
+			echo $data->yellow("======== FLAGS =========").PHP_EOL;
+			echo $data->green("--info for see this script info").PHP_EOL;
+			echo $data->green("--thanks To see my thanks this script").PHP_EOL;
 			$data->reset();
 		break;
 }
