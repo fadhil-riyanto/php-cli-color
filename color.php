@@ -173,14 +173,11 @@ class cli_color{
 		print $name;
 		for ($i=1;$i<=7;$i++){
 			echo "-";
-			
 		}echo "".PHP_EOL;$sosmed = array ("Instagram : www.instagram.com/id_fadhil_riyanto/",
 		"Github : github.com/fadhil-riyanto");echo "".PHP_EOL;
 		;foreach($sosmed as $info){
 			echo "++ $info".PHP_EOL;
 		}
-		
-		
 	}
 	function thanks(){
 		$thanks_to = array("My PC","Coffe","Music","Internet");
@@ -191,22 +188,21 @@ class cli_color{
 					echo "- $value".PHP_EOL;
 				}
 	}
-} 
+}
 switch ($argv[1]){
 	case "--info":
 		$data = new cli_color;
 			$data->copyright();
 		break;
-		
 	case "--thanks":
 		$data_1 = new cli_color;
 			$data_1->thanks();
 		break;
-	
 	case "--help":
 		$data = new cli_color;
-			$data->copyright();
+			echo $data->green("######################################################################").PHP_EOL;
+			echo $data->cyan("See https://github.com/fadhil-riyanto/php-cli-color readme file...okay").PHP_EOL;
+			$data->reset();
 		break;
 }
-
 ?>
