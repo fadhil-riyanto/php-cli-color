@@ -1,14 +1,38 @@
 <?php 
 class cli_color{
+	//============ Foreground Color ====================
+	//Devs By Fadhil Riyanto
+	
+	function bold($text){
+		echo "\e[1;1m $text";
+	}
+	
+	function dark($text){
+		echo "\e[2;1m $text";
+	}
+	
+	function italic($text){
+		echo "\e[3;1m $text";
+	}
 	
 	//Underline
 	function underline($text){
 		echo "\e[4;1m $text";
 	}
-	//color background
-	function color_background($text){
+	
+	function blink($text){
+		echo "\e[5;1m $text";
+	}
+	
+	function reverse($text){
 		echo "\e[7;1m $text";
 	}
+	
+	function concealed($text){
+		echo "\e[8;1m $text";
+	}
+	
+	
 	//black
 	function black($text){
 		echo "\e[30;1m $text";
@@ -30,7 +54,7 @@ class cli_color{
 		echo "\e[34;1m $text";
 	}
 	
-	function purple($text){
+	function magenta($text){
 		echo "\e[35;1m $text";
 	}
 	
@@ -38,10 +62,18 @@ class cli_color{
 		echo "\e[36;1m $text";
 	}
 	
-	function white($text){
+	function light_gray($text){
 		echo "\e[37;1m $text";
 	}
 	
+	function dark_gray($text){
+		echo "\e[90;1m $text";
+	}
+	
+	function light_red($text){
+		echo "\e[91;1m $text";
+	}
+	//=================== bG COLOR ===================
 	function red_bg($text){
 		echo "\e[41;1m $text";
 	}
