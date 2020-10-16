@@ -73,32 +73,60 @@ class cli_color{
 	function light_red($text){
 		echo "\e[91;1m $text";
 	}
+	
+	function light_green($text){
+		echo "\e[92;1m $text";
+	}
+	
+	function light_yellow($text){
+		echo "\e[93;1m $text";
+	}
+	function light_blue($text){
+		echo "\e[94;1m $text";
+	}
+	
+	function light_magenta($text){
+		echo "\e[95;1m $text";
+	}
+	
+	function light_cyan($text){
+		echo "\e[96;1m $text";
+	}
+	
+	function white($text){
+		echo "\e[97;1m $text";
+	}
+	
 	//=================== bG COLOR ===================
-	function red_bg($text){
+	function bg_black($text){
+		echo "\e[40;1m $text";
+	}
+	
+	function bg_red($text){
 		echo "\e[41;1m $text";
 	}
 	
-	function green_bg($text){
+	function bg_green($text){
 		echo "\e[42;1m $text";
 	}
 	
-	function yellow_bg($text){
+	function bg_yellow($text){
 		echo "\e[43;1m $text";
 	}
 	
-	function blue_bg($text){
+	function bg_blue($text){
 		echo "\e[44;1m $text";
 	}
 	
-	function purple_bg($text){
+	function bg_magenta($text){
 		echo "\e[45;1m $text";
 	}
 	
-	function cyan_bg($text){
+	function bg_cyan($text){
 		echo "\e[46;1m $text";
 	}
 	
-	function white_bg($text){
+	function bg_light_gray($text){
 		echo "\e[47;1m $text";
 	}
 	
