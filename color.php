@@ -189,7 +189,7 @@ class cli_color{
 				}
 	}
 }
-switch ($argv[1]){
+switch (@$argv[1]){
 	case "--info":
 		$data = new cli_color;
 			$data->copyright();
