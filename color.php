@@ -130,6 +130,38 @@ class cli_color{
 		echo "\e[47;1m $text";
 	}
 	
+	function bg_dark_gray($text){
+		echo "\e[100;1m $text";
+	}
+	
+	function bg_light_red($text){
+		echo "\e[101;1m $text";
+	}
+	
+	function bg_light_green($text){
+		echo "\e[102;1m $text";
+	}
+	
+	function bg_light_yellow($text){
+		echo "\e[103;1m $text";
+	}
+	
+	function bg_light_blue($text){
+		echo "\e[104;1m $text";
+	}
+	
+	function bg_light_magenta($text){
+		echo "\e[105;1m $text";
+	}
+	
+	function bg_light_cyan($text){
+		echo "\e[106;1m $text";
+	}
+	
+	function bg_white($text){
+		echo "\e[107;1m $text";
+	}
+	
 	function reset(){
 		echo "\e[0;1m";
 	}
