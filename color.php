@@ -173,32 +173,17 @@ class cli_color{
 		print $name;
 		for ($i=1;$i<=7;$i++){
 			echo "-";
+			
+		}echo "".PHP_EOL;$sosmed = array ("Instagram : www.instagram.com/id_fadhil_riyanto/",
+		"Github : github.com/fadhil-riyanto");echo "".PHP_EOL;
+		;foreach($sosmed as $info){
+			echo "++ $info".PHP_EOL;
 		}
-		echo "".PHP_EOL;
-		$func = array("underline",
-			"color_background",
-			"black",
-			"red",
-			"green",
-			"yellow",
-			"blue",
-			"purple",
-			"cyan",
-			"white",
-			"red_bg",
-			"green_bg",
-			"yellow_bg",
-			"blue_bg",
-			"purple_bg",
-			"cyan_bg",
-			"white_bg",
-			"reset()");
-		foreach ($func as $function){
-			echo "$function".PHP_EOL;
-		}
+		
+		
 	}
 	function thanks(){
-		$thanks_to = array("My PC","Coffe","Music");
+		$thanks_to = array("My PC","Coffe","Music","Internet");
 			for($i=1;$i<=30;$i++){
 				echo "-";
 			}echo "".PHP_EOL;
@@ -206,6 +191,22 @@ class cli_color{
 					echo "- $value".PHP_EOL;
 				}
 	}
+} 
+switch ($argv[1]){
+	case "--info":
+		$data = new cli_color;
+			$data->copyright();
+		break;
+		
+	case "--thanks":
+		$data_1 = new cli_color;
+			$data_1->thanks();
+		break;
+	
+	case "--help":
+		$data = new cli_color;
+			$data->copyright();
+		break;
 }
 
 ?>
