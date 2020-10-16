@@ -49,5 +49,10 @@ echo $tes->reset().PHP_EOL;
 ## run result
 <img src="https://i.ibb.co/RgXNrhR/Screenshot-10-16-2020-10-44-48.png" alt="Screenshot-10-16-2020-10-44-48" border="0">
 
+## Command
+Type ```php color.php --info``` for see info the script.
+Type ```php color.php --thanks``` To see who helps.
+Type ```php color.php --help``` To see all available commands.
+
 ## License
 MIT
