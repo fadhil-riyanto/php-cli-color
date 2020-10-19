@@ -54,5 +54,8 @@ Type ```php color.php --info``` for see info the script.
 Type ```php color.php --thanks``` To see who helps.
 Type ```php color.php --help``` To see all available commands.
 
+## Tested on
+Windows 10 x64, php 7.4
+
 ## License
 MIT
